@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Lend Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lend Books</h1>
+        
+        <!-- Lend Book Form -->
+        <form action="#" method="post">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" placeholder="Enter book title" required>
+
+            <label for="member-name">Member Name:</label>
+            <input type="text" id="member-name" name="member-name" placeholder="Enter member's name" required>
+
+            <label for="lend-date">Lend Date:</label>
+            <input type="date" id="lend-date" name="lend-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <button type="submit">Lend Book</button>
+        </form>
+        
+        <!-- Lending History -->
+        <h2>Lending History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Book Title</th>
+                    <th>Member Name</th>
+                    <th>Lend Date</th>
+                    <th>Return Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Java Programming</td>
+                    <td>Vaibhav Vats</td>
+                    <td>2024-01-10</td>
+                    <td>2024-01-20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>A Brief History Of System Softwere</td>
+                    <td>Himanshu</td>
+                    <td>2024-02-05</td>
+                    <td>2024-02-15</td>
+                </tr>
+                <!-- Add more records manually -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
